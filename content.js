@@ -16,16 +16,17 @@ window.SITE = {
     fr: "assets/cv/Hanine_Ben_Amor_CV_FR.pdf"
   },
 
-  /* ======================= ENGLISH ======================= */
+  /* ENGLISH  */
   en: {
     nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", education: "Education", contact: "Contact", cv: "Download CV", menu: "Menu" },
     hero: {
       status: "Open to a PFE internship in applied AI, 2027",
       title: "Hanine Ben Amor.",
       tagline: "I build AI that sees, reads and reasons.",
-      intro: "Final-year ICT engineering student at INSAT, working on computer vision, RAG, LLMs and multimodal AI, from research prototypes to models running on edge devices.",
+      intro: "Final-year ICT engineering student at INSAT, working on computer vision, NLP, RAG, LLMs and multimodal AI, from research prototypes to models running on edge devices.",
       cta1: "Download CV",
-      cta2: "See my work",
+      cta2: "View my experience",
+      cta3: "View my projects",
       note: "Looking for startups and research labs in France"
     },
     highlights: [
@@ -37,13 +38,13 @@ window.SITE = {
     about: {
       title: "About",
       text: [
-        "I'm a final-year engineering student at INSAT (Tunis) with hands-on experience across the AI stack: classical machine learning, computer vision, retrieval-augmented generation, LLMs and multimodal models.",
-        "I care about systems that work in real conditions: models that run on a Jetson under privacy constraints, RAG pipelines that refuse to answer without evidence, and search engines fast enough to feel instant. For my PFE, I'm looking for a startup or research lab in France working on computer vision, ML, RAG or agentic LLM systems."
+        "I'm a final-year engineering student at INSAT (Tunis) with hands-on experience across the AI stack: classical machine learning, computer vision, natural language processing (NLP), retrieval-augmented generation, LLMs and multimodal models.",
+        "I care about systems that work in real conditions: models that run on a Jetson under privacy constraints, RAG pipelines that refuse to answer without evidence, and search engines fast enough to feel instant. For my PFE, I'm looking for a startup or research lab in France working on computer vision, NLP, ML, RAG or agentic LLM systems."
       ],
       facts: [
         { k: "Based in", v: "Tunis, Tunisia" },
         { k: "Degree", v: "Engineering, INSAT, 2027" },
-        { k: "Focus", v: "Computer vision, RAG & LLMs, multimodal AI" },
+        { k: "Focus", v: "Computer vision, NLP, RAG & LLMs, multimodal AI" },
         { k: "Languages", v: "French, English, Arabic; basic German and Spanish" }
       ]
     },
@@ -53,7 +54,7 @@ window.SITE = {
       items: [
         {
           role: "AI & Data Science Intern (R&D)",
-          org: "Yonnov'IA", place: "Marseille, France", dates: "Aug 2026 – Sep 2026",
+          org: "Yonnov'IA", place: "Marseille, France", dates: "July 2026 – Aug 2026",
           bullets: [
             "Built a hybrid semantic recommendation engine (9 signals + MMR) with ONNX/fastembed and pgvector (HNSW/IVFFlat), on top of a full scraping-to-retrieval pipeline.",
             "Cut latency from ~4–5 s to near-instant and memory from several GB to ~100 MB by moving from PyTorch to ONNX Runtime, with 3D PCA explainability and precision@k evaluation."
@@ -89,10 +90,10 @@ window.SITE = {
           link: "https://github.com/BenAmorHanine/personal_security_solution",
           bullets: [
             "Architected an AI-powered personal safety platform combining geospatial risk prediction and behavioural anomaly detection.",
-            "Developed a voice AI pipeline with Whisper, TunBERT and SpeechBrain/Pyannote for transcription, classification and emotion analysis.",
+            "Built the NLP and voice AI pipeline: Whisper for speech transcription, TunBERT (Tunisian dialect language model) for text classification, and SpeechBrain/Pyannote for speaker and emotion analysis.",
             "Trained RandomForest/XGBoost models and served them through FastAPI microservices with REST APIs for real-time alerts."
           ],
-          tags: ["Whisper", "TunBERT", "XGBoost", "FastAPI"]
+          tags: ["NLP", "Whisper", "TunBERT", "Speech AI", "XGBoost", "FastAPI"]
         },
         {
           role: "IT Instructor",
@@ -117,6 +118,13 @@ window.SITE = {
           badge: "Publication in progress",
           text: "End-to-end pipeline that automatically generates Shorts by combining ImageBind, Whisper and BLIP-2, with cross-modal weighting and per-segment attention. Zero-shot detection through transformer-based semantic reranking of generated descriptions, with no labelled data.",
           tags: ["ImageBind", "Whisper", "BLIP-2", "Zero-shot"]
+        },
+        {
+          title: "Real-time personal safety system",
+          link: "https://github.com/BenAmorHanine/personal_security_solution",
+          badge: "Hydatis internship",
+          text: "Multi-signal safety system that detects potential incidents by fusing behavioural anomaly detection, geospatial risk assessment and voice analysis, with an NLP pipeline (Whisper + TunBERT) and real-time alerts served through FastAPI.",
+          tags: ["NLP", "Speech AI", "Anomaly detection", "Geospatial ML", "FastAPI"]
         },
         {
           title: "Respiratory sound classification",
@@ -181,16 +189,17 @@ window.SITE = {
     footer: "Built and hosted on GitHub Pages."
   },
 
-  /* ======================= FRANÇAIS ======================= */
+  /*  FRANÇAIS  */
   fr: {
     nav: { about: "Profil", experience: "Expérience", projects: "Projets", skills: "Compétences", education: "Formation", contact: "Contact", cv: "Télécharger le CV", menu: "Menu" },
     hero: {
       status: "Disponible pour un stage PFE en IA appliquée, 2027",
       title: "Hanine Ben Amor.",
       tagline: "Je conçois des IA qui voient, lisent et raisonnent.",
-      intro: "Élève ingénieure en dernière année à l'INSAT, je travaille sur la vision par ordinateur, le RAG, les LLMs et l'IA multimodale, du prototype de recherche au modèle déployé en edge.",
+      intro: "Élève ingénieure en dernière année à l'INSAT, je travaille sur la vision par ordinateur, le NLP, le RAG, les LLMs et l'IA multimodale, du prototype de recherche au modèle déployé en edge.",
       cta1: "Télécharger le CV",
-      cta2: "Voir mes projets",
+      cta2: "Voir mon expérience",
+      cta3: "Voir mes projets",
       note: "À la recherche d'une startup ou d'un laboratoire de recherche en France"
     },
     highlights: [
@@ -202,13 +211,13 @@ window.SITE = {
     about: {
       title: "Profil",
       text: [
-        "Élève ingénieure en dernière année à l'INSAT (Tunis), j'ai une expérience concrète sur toute la chaîne de l'IA : machine learning classique, vision par ordinateur, génération augmentée par la recherche (RAG), LLMs et modèles multimodaux.",
-        "Je m'intéresse aux systèmes qui fonctionnent en conditions réelles : des modèles qui tournent sur Jetson sous contraintes de confidentialité, des pipelines RAG qui refusent de répondre sans preuve, des moteurs de recherche assez rapides pour paraître instantanés. Pour mon PFE, je recherche une startup ou un laboratoire en France travaillant sur la vision, le ML, le RAG ou les systèmes agentiques à base de LLMs."
+        "Élève ingénieure en dernière année à l'INSAT (Tunis), j'ai une expérience concrète sur toute la chaîne de l'IA : machine learning classique, vision par ordinateur, traitement automatique du langage (NLP), génération augmentée par la recherche (RAG), LLMs et modèles multimodaux.",
+        "Je m'intéresse aux systèmes qui fonctionnent en conditions réelles : des modèles qui tournent sur Jetson sous contraintes de confidentialité, des pipelines RAG qui refusent de répondre sans preuve, des moteurs de recherche assez rapides pour paraître instantanés. Pour mon PFE, je recherche une startup ou un laboratoire en France travaillant sur la vision, le NLP, le ML, le RAG ou les systèmes agentiques à base de LLMs."
       ],
       facts: [
         { k: "Basée à", v: "Tunis, Tunisie" },
         { k: "Diplôme", v: "Ingénieure, INSAT, 2027" },
-        { k: "Domaines", v: "Vision par ordinateur, RAG et LLMs, IA multimodale" },
+        { k: "Domaines", v: "Vision par ordinateur, NLP, RAG et LLMs, IA multimodale" },
         { k: "Langues", v: "Français, anglais, arabe ; notions d'allemand et d'espagnol" }
       ]
     },
@@ -218,7 +227,7 @@ window.SITE = {
       items: [
         {
           role: "Stagiaire IA & Data Science (R&D)",
-          org: "Yonnov'IA", place: "Marseille, France", dates: "Août 2026 – Sept. 2026",
+          org: "Yonnov'IA", place: "Marseille, France", dates: "Juillet 2026 – Août. 2026",
           bullets: [
             "Développement d'un moteur de recommandation sémantique hybride (9 signaux + MMR) avec ONNX/fastembed et pgvector (HNSW/IVFFlat), sur un pipeline complet du scraping au retrieval.",
             "Latence réduite de ~4–5 s à quasi instantanée et mémoire de plusieurs Go à ~100 Mo grâce au passage de PyTorch à ONNX Runtime, avec explicabilité PCA 3D et évaluation precision@k."
@@ -254,10 +263,10 @@ window.SITE = {
           link: "https://github.com/BenAmorHanine/personal_security_solution",
           bullets: [
             "Conception d'une plateforme de sécurité personnelle combinant prédiction géospatiale des risques et détection d'anomalies comportementales.",
-            "Développement d'un pipeline d'IA vocale avec Whisper, TunBERT et SpeechBrain/Pyannote pour la transcription, la classification et l'analyse des émotions.",
+            "Développement du pipeline NLP et d'IA vocale : Whisper pour la transcription, TunBERT (modèle de langue pour le dialecte tunisien) pour la classification de texte, et SpeechBrain/Pyannote pour l'analyse du locuteur et des émotions.",
             "Entraînement de modèles RandomForest/XGBoost et mise en production via des microservices FastAPI et des APIs REST pour des alertes en temps réel."
           ],
-          tags: ["Whisper", "TunBERT", "XGBoost", "FastAPI"]
+          tags: ["NLP", "Whisper", "TunBERT", "Speech AI", "XGBoost", "FastAPI"]
         },
         {
           role: "Formatrice en programmation",
@@ -282,6 +291,13 @@ window.SITE = {
           badge: "Publication en cours",
           text: "Pipeline de bout en bout qui génère automatiquement des Shorts en combinant ImageBind, Whisper et BLIP-2, avec pondération cross-modale et attention par segment. Détection zero-shot par reranking sémantique à base de transformers sur des descriptions générées, sans données labellisées.",
           tags: ["ImageBind", "Whisper", "BLIP-2", "Zero-shot"]
+        },
+        {
+          title: "Système de sécurité personnelle en temps réel",
+          link: "https://github.com/BenAmorHanine/personal_security_solution",
+          badge: "Stage Hydatis",
+          text: "Système multi-signaux qui détecte les incidents potentiels en fusionnant détection d'anomalies comportementales, évaluation géospatiale des risques et analyse vocale, avec un pipeline NLP (Whisper + TunBERT) et des alertes temps réel servies via FastAPI.",
+          tags: ["NLP", "IA vocale", "Détection d'anomalies", "ML géospatial", "FastAPI"]
         },
         {
           title: "Classification de sons respiratoires",
