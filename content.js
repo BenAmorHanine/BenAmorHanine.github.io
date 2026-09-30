@@ -16,7 +16,7 @@ window.SITE = {
     fr: "assets/cv/Hanine_Ben_Amor_CV_FR.pdf"
   },
 
-  /* ENGLISH  */
+  /* ======================= ENGLISH ======================= */
   en: {
     nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", education: "Education", contact: "Contact", cv: "Download CV", menu: "Menu" },
     hero: {
@@ -54,7 +54,7 @@ window.SITE = {
       items: [
         {
           role: "AI & Data Science Intern (R&D)",
-          org: "Yonnov'IA", place: "Marseille, France", dates: "July 2026 – Aug 2026",
+          org: "Yonnov'IA", place: "Marseille, France", dates: "Jul 2026 – Aug 2026",
           bullets: [
             "Built a hybrid semantic recommendation engine (9 signals + MMR) with ONNX/fastembed and pgvector (HNSW/IVFFlat), on top of a full scraping-to-retrieval pipeline.",
             "Cut latency from ~4–5 s to near-instant and memory from several GB to ~100 MB by moving from PyTorch to ONNX Runtime, with 3D PCA explainability and precision@k evaluation."
@@ -75,7 +75,7 @@ window.SITE = {
             {
               name: "AI, RAG & OCR", dates: "Dec 2025 – May 2026",
               bullets: [
-                "Designed an air-gapped, open-licence RAG system for a ~1.25-billion-page Arabic judicial archive (Ministry of Justice).",
+                "Designed an air-gapped, open-licence RAG system with a locally deployed Qwen LLM for a ~1.25-billion-page Arabic judicial archive (Ministry of Justice).",
                 "Benchmarked OCR engines (PaddleOCR, Qari-OCR, Baseer) by page type and quality tier with CER/WER, on a handwriting-heavy corpus without ground truth.",
                 "Built an 8-stage pipeline (intake, audit, splitting, structuring, hybrid indexing) with dense, BM25 and visual retrieval, cross-encoder reranking and Qwen for answer generation.",
                 "Enforced a no-answer-without-evidence rule through citation verification, graded abstention against hallucinations, and a review loop that stores corrections as training data."
@@ -90,7 +90,7 @@ window.SITE = {
           link: "https://github.com/BenAmorHanine/personal_security_solution",
           bullets: [
             "Architected an AI-powered personal safety platform combining geospatial risk prediction and behavioural anomaly detection.",
-            "Built the NLP and voice AI pipeline: Whisper for speech transcription, TunBERT (Tunisian dialect language model) for text classification, and SpeechBrain/Pyannote for speaker and emotion analysis.",
+            "Built the NLP and voice AI pipeline: Whisper transcription, then TunBERT fine-tuned on Tunisian dialect to detect distress (recall 0.90, F1 0.88 on the distress class), plus SpeechBrain for emotion analysis.",
             "Trained RandomForest/XGBoost models and served them through FastAPI microservices with REST APIs for real-time alerts."
           ],
           tags: ["NLP", "Whisper", "TunBERT", "Speech AI", "XGBoost", "FastAPI"]
@@ -122,9 +122,15 @@ window.SITE = {
         {
           title: "Real-time personal safety system",
           link: "https://github.com/BenAmorHanine/personal_security_solution",
-          badge: "Hydatis internship",
-          text: "Multi-signal safety system that detects potential incidents by fusing behavioural anomaly detection, geospatial risk assessment and voice analysis, with an NLP pipeline (Whisper + TunBERT) and real-time alerts served through FastAPI.",
-          tags: ["NLP", "Speech AI", "Anomaly detection", "Geospatial ML", "FastAPI"]
+          badge: "Distress recall 0.90",
+          text: "Multi-signal safety system (Hydatis internship) that detects potential incidents by fusing behavioural anomaly detection, geospatial risk assessment and voice analysis. Its NLP core is a TunBERT model fine-tuned on Tunisian dialect transcriptions, which caught 180 of 200 distress cases in the test set.",
+          tags: ["NLP", "Fine-tuning", "TunBERT", "Speech AI", "FastAPI"]
+        },
+        {
+          title: "Sentiment analysis of hotel reviews",
+          badge: "Team project",
+          text: "Full NLP pipeline on reviews of a 4-star business hotel in Tunis: Selenium scraping, text cleaning, TF-IDF, weak labelling and a comparison of Naive Bayes, logistic regression and SVM. Rebalancing with SMOTE raised the SVM from 68% to 90% in 5-fold cross-validation, and the analysis of its lexical limits points to contextual models.",
+          tags: ["NLP", "TF-IDF", "SVM", "scikit-learn", "Web scraping"]
         },
         {
           title: "Respiratory sound classification",
@@ -154,7 +160,7 @@ window.SITE = {
         { name: "ML & deep learning", items: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "Hugging Face Transformers", "AST", "XGBoost", "RandomForest"] },
         { name: "Generative AI & LLMs", items: ["LLMs", "RAG", "Diffusion models", "Embeddings", "Prompt engineering", "Qwen", "LLaMA", "Graded abstention"] },
         { name: "Computer vision", items: ["Object detection", "Classification", "Pose estimation", "Tracking", "OCR", "Edge AI", "YOLO", "RF-DETR", "Fine-tuning", "mAP evaluation"] },
-        { name: "Specialisations", items: ["NLP", "Arabic NLP", "Document AI", "PaddleOCR", "Video processing", "Whisper", "SpeechBrain", "TunBERT", "ImageBind", "BLIP-2"] },
+        { name: "Specialisations", items: ["NLP", "Arabic NLP", "Sentiment analysis", "Transformer fine-tuning", "Document AI", "PaddleOCR", "Video processing", "Whisper", "SpeechBrain", "TunBERT", "ImageBind", "BLIP-2"] },
         { name: "Semantic search", items: ["pgvector", "HNSW / IVFFlat", "BM25", "MMR", "Cross-encoder reranking", "Precision@k", "PCA explainability"] },
         { name: "MLOps & deployment", items: ["Docker", "FastAPI", "ONNX", "Prometheus", "Grafana", "REST APIs", "NVIDIA Jetson", "MQTT"] },
         { name: "Data & databases", items: ["Pandas", "NumPy", "SQL", "Spark", "Kafka", "HDFS", "HBase", "MapReduce", "PostgreSQL", "MySQL", "MongoDB", "Power BI"] },
@@ -189,7 +195,7 @@ window.SITE = {
     footer: "Built and hosted on GitHub Pages."
   },
 
-  /*  FRANÇAIS  */
+  /* ======================= FRANÇAIS ======================= */
   fr: {
     nav: { about: "Profil", experience: "Expérience", projects: "Projets", skills: "Compétences", education: "Formation", contact: "Contact", cv: "Télécharger le CV", menu: "Menu" },
     hero: {
@@ -227,7 +233,7 @@ window.SITE = {
       items: [
         {
           role: "Stagiaire IA & Data Science (R&D)",
-          org: "Yonnov'IA", place: "Marseille, France", dates: "Juillet 2026 – Août. 2026",
+          org: "Yonnov'IA", place: "Marseille, France", dates: "Juil. 2026 – Août 2026",
           bullets: [
             "Développement d'un moteur de recommandation sémantique hybride (9 signaux + MMR) avec ONNX/fastembed et pgvector (HNSW/IVFFlat), sur un pipeline complet du scraping au retrieval.",
             "Latence réduite de ~4–5 s à quasi instantanée et mémoire de plusieurs Go à ~100 Mo grâce au passage de PyTorch à ONNX Runtime, avec explicabilité PCA 3D et évaluation precision@k."
@@ -248,7 +254,7 @@ window.SITE = {
             {
               name: "IA, RAG & OCR", dates: "Déc. 2025 – Mai 2026",
               bullets: [
-                "Conception d'un système RAG air-gappé sous licences ouvertes pour une archive judiciaire arabe d'environ 1,25 milliard de pages (Ministère de la Justice).",
+                "Conception d'un système RAG air-gappé sous licences ouvertes, avec un LLM Qwen déployé en local, pour une archive judiciaire arabe d'environ 1,25 milliard de pages (Ministère de la Justice).",
                 "Benchmark de moteurs OCR (PaddleOCR, Qari-OCR, Baseer) par type de page et niveau de qualité via CER/WER, sur un corpus majoritairement manuscrit sans vérité terrain.",
                 "Pipeline en 8 étapes (réception, audit, découpage, structuration, indexation hybride) avec retrieval dense, BM25 et visuel, reranking par cross-encoder et Qwen pour la génération des réponses.",
                 "Règle stricte « pas de réponse sans preuve » : vérification des citations, abstention graduée contre les hallucinations et boucle de révision qui conserve les corrections comme données d'entraînement."
@@ -263,7 +269,7 @@ window.SITE = {
           link: "https://github.com/BenAmorHanine/personal_security_solution",
           bullets: [
             "Conception d'une plateforme de sécurité personnelle combinant prédiction géospatiale des risques et détection d'anomalies comportementales.",
-            "Développement du pipeline NLP et d'IA vocale : Whisper pour la transcription, TunBERT (modèle de langue pour le dialecte tunisien) pour la classification de texte, et SpeechBrain/Pyannote pour l'analyse du locuteur et des émotions.",
+            "Développement du pipeline NLP et d'IA vocale : transcription Whisper, puis TunBERT fine-tuné sur le dialecte tunisien pour détecter la détresse (rappel 0,90, F1 0,88 sur la classe Détresse), et SpeechBrain pour l'analyse des émotions.",
             "Entraînement de modèles RandomForest/XGBoost et mise en production via des microservices FastAPI et des APIs REST pour des alertes en temps réel."
           ],
           tags: ["NLP", "Whisper", "TunBERT", "Speech AI", "XGBoost", "FastAPI"]
@@ -295,9 +301,15 @@ window.SITE = {
         {
           title: "Système de sécurité personnelle en temps réel",
           link: "https://github.com/BenAmorHanine/personal_security_solution",
-          badge: "Stage Hydatis",
-          text: "Système multi-signaux qui détecte les incidents potentiels en fusionnant détection d'anomalies comportementales, évaluation géospatiale des risques et analyse vocale, avec un pipeline NLP (Whisper + TunBERT) et des alertes temps réel servies via FastAPI.",
-          tags: ["NLP", "IA vocale", "Détection d'anomalies", "ML géospatial", "FastAPI"]
+          badge: "Rappel détresse 0,90",
+          text: "Système multi-signaux (stage Hydatis) qui détecte les incidents potentiels en fusionnant détection d'anomalies comportementales, évaluation géospatiale des risques et analyse vocale. Son cœur NLP est un TunBERT fine-tuné sur des transcriptions en dialecte tunisien, qui a détecté 180 des 200 cas de détresse du jeu de test.",
+          tags: ["NLP", "Fine-tuning", "TunBERT", "IA vocale", "FastAPI"]
+        },
+        {
+          title: "Analyse de sentiment d'avis clients d'un hôtel",
+          badge: "Projet en équipe",
+          text: "Pipeline NLP complet sur les avis d'un hôtel d'affaires 4 étoiles à Tunis : scraping Selenium, nettoyage du texte, TF-IDF, étiquetage faible et comparaison Naive Bayes, régression logistique et SVM. Le rééquilibrage par SMOTE fait passer le SVM de 68 % à 90 % en validation croisée 5-fold, et l'analyse de ses limites lexicales oriente vers des modèles contextuels.",
+          tags: ["NLP", "TF-IDF", "SVM", "scikit-learn", "Web scraping"]
         },
         {
           title: "Classification de sons respiratoires",
@@ -327,7 +339,7 @@ window.SITE = {
         { name: "ML & deep learning", items: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "Hugging Face Transformers", "AST", "XGBoost", "RandomForest"] },
         { name: "IA générative & LLMs", items: ["LLMs", "RAG", "Modèles de diffusion", "Embeddings", "Prompt engineering", "Qwen", "LLaMA", "Abstention graduée"] },
         { name: "Vision par ordinateur", items: ["Détection d'objets", "Classification", "Estimation de pose", "Suivi d'objets", "OCR", "Edge AI", "YOLO", "RF-DETR", "Fine-tuning", "Évaluation mAP"] },
-        { name: "Spécialisations", items: ["NLP", "NLP arabe", "Document AI", "PaddleOCR", "Traitement vidéo", "Whisper", "SpeechBrain", "TunBERT", "ImageBind", "BLIP-2"] },
+        { name: "Spécialisations", items: ["NLP", "NLP arabe", "Analyse de sentiment", "Fine-tuning de Transformers", "Document AI", "PaddleOCR", "Traitement vidéo", "Whisper", "SpeechBrain", "TunBERT", "ImageBind", "BLIP-2"] },
         { name: "Recherche sémantique", items: ["pgvector", "HNSW / IVFFlat", "BM25", "MMR", "Reranking cross-encoder", "Precision@k", "Explicabilité PCA"] },
         { name: "MLOps & déploiement", items: ["Docker", "FastAPI", "ONNX", "Prometheus", "Grafana", "APIs REST", "NVIDIA Jetson", "MQTT"] },
         { name: "Données & bases", items: ["Pandas", "NumPy", "SQL", "Spark", "Kafka", "HDFS", "HBase", "MapReduce", "PostgreSQL", "MySQL", "MongoDB", "Power BI"] },
