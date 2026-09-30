@@ -128,6 +128,7 @@ window.SITE = {
         },
         {
           title: "Sentiment analysis of hotel reviews",
+          link: "https://github.com/BenAmorHanine/ML--Customers_Review_Analysis",
           badge: "Team project",
           text: "Full NLP pipeline on reviews of a 4-star business hotel in Tunis: Selenium scraping, text cleaning, TF-IDF, weak labelling and a comparison of Naive Bayes, logistic regression and SVM. Rebalancing with SMOTE raised the SVM from 68% to 90% in 5-fold cross-validation, and the analysis of its lexical limits points to contextual models.",
           tags: ["NLP", "TF-IDF", "SVM", "scikit-learn", "Web scraping"]
@@ -307,6 +308,7 @@ window.SITE = {
         },
         {
           title: "Analyse de sentiment d'avis clients d'un hôtel",
+          link: "https://github.com/BenAmorHanine/ML--Customers_Review_Analysis",
           badge: "Projet en équipe",
           text: "Pipeline NLP complet sur les avis d'un hôtel d'affaires 4 étoiles à Tunis : scraping Selenium, nettoyage du texte, TF-IDF, étiquetage faible et comparaison Naive Bayes, régression logistique et SVM. Le rééquilibrage par SMOTE fait passer le SVM de 68 % à 90 % en validation croisée 5-fold, et l'analyse de ses limites lexicales oriente vers des modèles contextuels.",
           tags: ["NLP", "TF-IDF", "SVM", "scikit-learn", "Web scraping"]
