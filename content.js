@@ -10,7 +10,7 @@ window.SITE = {
   email: "hanine.benamor@insat.ucar.tn",
   github: "https://github.com/BenAmorHanine",
   linkedin: "https://www.linkedin.com/in/hanine-ben-amor-3604b1247/",
-  photo: "assets/photo.jpg", // put your photo here with this exact name
+  photo: ,//"assets/photo.jpg", // put your photo here with this exact name
   cv: {
     en: "assets/cv/Hanine_Ben_Amor_CV_EN.pdf",
     fr: "assets/cv/Hanine_Ben_Amor_CV_FR.pdf"
