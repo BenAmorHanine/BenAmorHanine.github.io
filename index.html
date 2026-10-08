@@ -51,26 +51,25 @@ img{max-width:100%;display:block}
 .burger{display:none;background:none;border:1px solid var(--line-2);border-radius:999px;padding:7px 12px;font:500 13px var(--sans);color:var(--ink);cursor:pointer}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;overflow:hidden;padding:64px 0 72px;background:linear-gradient(180deg,var(--peach) 0%,var(--cream) 55%,var(--paper) 100%)}
+.hero{position:relative;overflow:hidden;text-align:center;padding:72px 0 64px;background:linear-gradient(180deg,var(--peach) 0%,var(--cream) 55%,var(--paper) 100%)}
 .arcs{position:absolute;left:50%;top:56%;transform:translateX(-50%);width:2200px;height:900px;pointer-events:none}
 .hero .wrap{position:relative}
-.hero-grid{display:grid;grid-template-columns:1.2fr .85fr;gap:64px;align-items:center;text-align:left}
-.portrait{justify-self:end;width:100%;max-width:410px;aspect-ratio:4/5;border-radius:999px 999px 36px 36px;overflow:hidden;background:#EAD6C8;border:6px solid var(--card);box-shadow:0 0 0 1px var(--line-2),0 40px 70px -40px rgba(122,74,49,.45);display:flex;align-items:center;justify-content:center;font:italic 64px var(--serif);color:var(--taupe)}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 28px;background:#EAD6C8;border:4px solid var(--card);box-shadow:0 0 0 1px var(--line-2);overflow:hidden;display:flex;align-items:center;justify-content:center;font:italic 40px var(--serif);color:var(--taupe)}
+.avatar img{width:100%;height:100%;object-fit:cover}
 .status{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex-shrink:0}
 .status .dot{animation:pulse 2.4s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(168,103,74,.45)}50%{box-shadow:0 0 0 6px rgba(168,103,74,0)}}
-.h1{font-size:clamp(42px,5.4vw,72px);font-weight:500;letter-spacing:-.035em;line-height:1;margin:22px 0 0}
-.h1b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(30px,4.3vw,54px);letter-spacing:-.01em;line-height:1.08;color:var(--taupe);margin:6px 0 0}
-.intro{max-width:560px;margin:26px 0 0;font-size:17px;line-height:1.75;color:var(--muted)}
-.ctas{display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:flex-start;align-items:center;margin-top:34px}
+.h1{font-size:clamp(44px,8.4vw,96px);font-weight:500;letter-spacing:-.035em;line-height:1;margin:22px 0 0}
+.h1b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(32px,5.8vw,68px);letter-spacing:-.01em;line-height:1.08;color:var(--taupe);margin:6px 0 0}
+.intro{max-width:600px;margin:28px auto 0;font-size:17px;line-height:1.75;color:var(--muted)}
+.ctas{display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:center;align-items:center;margin-top:36px}
 .contact .ctas{justify-content:center}
 .ctas .pill{padding:14px 26px;font-size:15px}
 .textlink{display:inline-flex;align-items:center;gap:10px;font-weight:500;font-size:15px;text-decoration:none}
 .textlink svg{width:16px;height:16px;transition:transform .2s}
 .textlink:hover svg{transform:translateX(3px)}
-.note{margin-top:22px;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.note{margin-top:22px;font-size:13px;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:8px}
 .note svg{width:14px;height:14px}
 
 /* entrance: one moment, hero only */
@@ -167,7 +166,7 @@ section.block{padding:88px 0 0}
 .socials a{display:inline-flex;align-items:center;gap:8px;font-size:14px;text-decoration:none;color:var(--taupe);padding:8px 14px;border-radius:999px}
 .socials a:hover{color:var(--ink);background:var(--hover)}
 .socials svg{width:16px;height:16px}
-.name-links{display:flex;gap:6px;margin:10px 0 4px -14px}
+.name-links{display:flex;justify-content:center;gap:6px;margin:12px 0 2px}
 .name-links a{display:inline-flex;align-items:center;gap:7px;font-size:14px;text-decoration:none;color:var(--taupe);padding:6px 14px;border-radius:999px;transition:background .15s,color .15s}
 .name-links a:hover{color:var(--ink);background:rgba(255,255,255,.7)}
 .name-links svg{width:16px;height:16px}
@@ -183,16 +182,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .links a{padding:12px 10px;border-radius:10px;font-size:15px}
   .burger{display:inline-block}
 }
-@media (max-width:900px){
-  .hero-grid{grid-template-columns:1fr;gap:32px;text-align:center}
-  .portrait{order:-1;justify-self:center;max-width:260px;font-size:48px}
-  .intro{margin-left:auto;margin-right:auto}
-  .hero .ctas,.note,.name-links{justify-content:center}
-  .name-links{margin-left:0}
-}
 @media (max-width:760px){
   .wrap{padding:0 20px}
-  .hero{padding:36px 0 48px}
+  .hero{padding:48px 0 48px}
+  .avatar{width:104px;height:104px}
   .status{font-size:11px;letter-spacing:.1em;max-width:300px}
   .stat{padding:20px 14px}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -292,12 +285,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     const navCv = document.getElementById("navCv");
     navCv.href = cv; document.getElementById("navCvLabel").textContent = T.nav.cv;
 
-    document.getElementById("links").innerHTML = SECTIONS.map(id=>`<li><a href="#${id}" data-id="${id}">${T.nav[id]}</a></li>`).join("") + `<li><a href="#contact" data-id="github">GitHub</a></li>`;
+    document.getElementById("links").innerHTML = SECTIONS.map(id=>`<li><a href="#${id}" data-id="${id}">${T.nav[id]}</a></li>`).join("");
 
     const H = T.hero;
     document.getElementById("hero").innerHTML = `
-      <div class="hero-grid">
-      <div>
+      <div class="avatar rise" id="avatar"><span>${S.initials}</span></div>
       <div class="status rise d1"><span class="dot"></span>${H.status}</div>
       <h1 class="h1 rise d2">${H.title}</h1>
       <div class="name-links rise d2"><a href="${S.github}" target="_blank" rel="noopener">${ICON.gh} GitHub</a><a href="${S.linkedin}" target="_blank" rel="noopener">${ICON.in} LinkedIn</a></div>
@@ -308,10 +300,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <a class="textlink" href="#experience">${H.cta2} ${ICON.arrow}</a>
         <a class="textlink" href="#projects">${H.cta3} ${ICON.arrow}</a>
       </div>
-      <p class="note rise d5">${ICON.pin}${H.note}</p>
-      </div>
-      <div class="portrait rise d2" id="avatar"><span>${S.initials}</span></div>
-      </div>`;
+      <p class="note rise d5">${ICON.pin}${H.note}</p>`;
     loadPhoto();
 
     document.getElementById("stats").innerHTML = T.highlights.map(h=>`<div class="stat"><b>${h.value}</b><span>${h.label}</span></div>`).join("");
