@@ -13,7 +13,7 @@ window.SITE = {
   photo: null,//"assets/photo.jpg", // put your photo here with this exact name
   cv: {
     en: "assets/cv/Hanine_Ben_Amor_CV_EN.pdf",
-    fr: "assets/cv/Hanine_Ben_Amor_CV_FR.pdf"
+    fr: "assets/cv/CV_Hanine_BenAmor_PFE27.pdf"
   },
 
   /* ======================= ENGLISH ======================= */
@@ -118,6 +118,13 @@ window.SITE = {
           badge: "Publication in progress",
           text: "End-to-end pipeline that automatically generates Shorts by combining ImageBind, Whisper and BLIP-2, with cross-modal weighting and per-segment attention. Zero-shot detection through transformer-based semantic reranking of generated descriptions, with no labelled data.",
           tags: ["ImageBind", "Whisper", "BLIP-2", "Zero-shot"]
+        },
+        {
+          title: "Pose estimation and behaviour classification in microscopy video",
+          link: "https://github.com/BenAmorHanine/VR-PoseEstimation-SpaceAnimal",
+          badge: "Pose mAP@50 96.9%",
+          text: "End-to-end pipeline that turns raw microscopy video of C. elegans into a predicted behaviour. Converted COCO annotations to YOLO-pose (6,996 images, 15,378 instances) and fine-tuned YOLOv8s-pose to 96.9% mAP@50 and 89.1% mAP@50-95 on keypoints, then extracted motion features (speed, curvature, elongation) and compared Random Forest, Gradient Boosting and LSTM with 5-fold cross-validation.",
+          tags: ["YOLOv8-pose", "Pose estimation", "Video", "PyTorch", "Individual project"]
         },
         {
           title: "Real-time personal safety system",
@@ -298,6 +305,13 @@ window.SITE = {
           badge: "Publication en cours",
           text: "Pipeline de bout en bout qui génère automatiquement des Shorts en combinant ImageBind, Whisper et BLIP-2, avec pondération cross-modale et attention par segment. Détection zero-shot par reranking sémantique à base de transformers sur des descriptions générées, sans données labellisées.",
           tags: ["ImageBind", "Whisper", "BLIP-2", "Zero-shot"]
+        },
+        {
+          title: "Estimation de pose et classification du comportement en vidéo de microscopie",
+          link: "https://github.com/BenAmorHanine/VR-PoseEstimation-SpaceAnimal",
+          badge: "mAP@50 pose 96,9 %",
+          text: "Pipeline de bout en bout qui transforme une vidéo brute de microscopie de C. elegans en comportement prédit. Conversion des annotations COCO en YOLO-pose (6 996 images, 15 378 instances) et fine-tuning de YOLOv8s-pose à 96,9 % de mAP@50 et 89,1 % de mAP@50-95 sur les points clés, puis extraction de descripteurs de mouvement (vitesse, courbure, élongation) et comparaison Random Forest, Gradient Boosting et LSTM en validation croisée 5-fold.",
+          tags: ["YOLOv8-pose", "Estimation de pose", "Vidéo", "PyTorch", "Projet individuel"]
         },
         {
           title: "Système de sécurité personnelle en temps réel",
